@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Culinary Hub - Modern Restaurant</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        /* Custom styles */
+        :root {
+            --primary-color: #991b1b; /* Dark Red */
+            --secondary-color: #f59e0b; /* Amber */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        /* Hero Section Styling - UPDATED IMAGE URL */
+        .hero-bg {
+            /* Using a high-quality interior shot for a moody, inviting feel */
+            background-image: url('https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .btn-primary:hover {
+            background-color: #b91c1c;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <h1 class="text-3xl font-bold text-gray-900" style="color: var(--primary-color);">The Culinary Hub</h1>
+            <nav class="hidden md:flex space-x-8 font-medium">
+                <a href="#menu" class="text-gray-600 hover:text-red-700 transition duration-150">Menu</a>
+                <a href="#about" class="text-gray-600 hover:text-red-700 transition duration-150">Our Story</a>
+                <a href="#contact" class="text-gray-600 hover:text-red-700 transition duration-150">Contact</a>
+            </nav>
+            <a href="#reserve" class="hidden md:block btn-primary px-4 py-2 rounded-lg font-semibold shadow-md">Book a Table</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg h-screen flex items-center justify-center text-white">
+        <div class="bg-black bg-opacity-60 p-8 md:p-16 rounded-xl text-center max-w-4xl mx-4 backdrop-blur-sm">
+            <p class="text-lg uppercase tracking-widest mb-3" style="color: var(--secondary-color);">Experience Fine Dining</p>
+            <h2 class="text-6xl md:text-8xl font-extrabold mb-6 leading-tight">Authentic Flavors. <br class="hidden md:inline">Unforgettable Moments.</h2>
+            <p class="text-xl mb-8">Serving classic cuisine with a modern twist since 2010.</p>
+            <div class="space-x-4">
+                <a href="#menu" class="btn-primary px-6 py-3 rounded-lg font-bold shadow-xl">View Menu</a>
+                <a href="#reserve" class="bg-white text-gray-800 px-6 py-3 rounded-lg font-bold shadow-xl hover:bg-gray-200 transition duration-300">Reserve Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <!-- UPDATED IMAGE URL: Cozy, well-designed interior -->
+                <img src="https://images.unsplash.com/photo-1549488344-938bfe4c424a?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cozy restaurant interior with modern lighting" class="rounded-xl shadow-2xl w-full h-auto object-cover">
+            </div>
+            <div class="space-y-6">
+                <p class="uppercase tracking-widest text-sm" style="color: var(--primary-color);">Our Philosophy</p>
+                <h2 class="text-4xl font-bold text-gray-800">A Story Rooted in Passion and Tradition</h2>
+                <p class="text-gray-600 leading-relaxed">The Culinary Hub was founded on the belief that simple, locally sourced ingredients can create extraordinary dishes. Our head chef, Maria, blends her family's traditional recipes with contemporary culinary techniques to deliver a fresh and familiar dining experience.</p>
+                <p class="text-gray-600 leading-relaxed">We are committed to quality, sustainability, and creating a warm, inviting atmosphere for all our guests. Join us to celebrate food, family, and good company.</p>
+                <a href="#contact" class="inline-block font-semibold border-b-2 border-red-500 hover:text-red-700 transition duration-150" style="color: var(--primary-color);">Meet the Chef & Staff <i class="fas fa-chevron-right ml-1 text-sm"></i></a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Menu Preview Section -->
+    <section id="menu" class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="uppercase tracking-widest text-sm" style="color: var(--primary-color);">Signature Dishes</p>
+            <h2 class="text-4xl font-bold text-gray-800 mb-12">A Taste of Our Best</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Dish 1: Handmade Ravioli (Pasta) - UPDATED IMAGE URL -->
+                <div class="bg-white rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1551886867-b52cc8939c09?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gourmet Pasta Dish with sauce" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2 text-gray-800">Handmade Ravioli</h3>
+                        <p class="text-gray-600 mb-4">Creamy ricotta filling, brown butter sage sauce, topped with toasted pine nuts.</p>
+                        <span class="text-xl font-bold" style="color: var(--primary-color);">₹ 950</span>
+                    </div>
+                </div>
+
+                <!-- Dish 2: Pan-Seared Salmon - UPDATED IMAGE URL -->
+                <div class="bg-white rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1621329243468-18e404b934b9?q=80&w=1771&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Seared Salmon with vegetables" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2 text-gray-800">Pan-Seared Salmon</h3>
+                        <p class="text-gray-600 mb-4">Served over lemon risotto and asparagus, finished with a dill-caper reduction.</p>
+                        <span class="text-xl font-bold" style="color: var(--primary-color);">₹ 1400</span>
+                    </div>
+                </div>
+
+                <!-- Dish 3: Molten Chocolate Lava Cake - UPDATED IMAGE URL -->
+                <div class="bg-white rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1598515286419-f9c1157f12e2?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Decadent Chocolate Lava Cake dessert" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2 text-gray-800">Molten Chocolate Lava Cake</h3>
+                        <p class="text-gray-600 mb-4">Warm dark chocolate cake with a gooey center, served with vanilla bean ice cream.</p>
+                        <span class="text-xl font-bold" style="color: var(--primary-color);">₹ 650</span>
+                    </div>
+                </div>
+
+            </div>
+            
+            <a href="#" class="mt-12 inline-block btn-primary px-8 py-3 rounded-lg font-bold shadow-lg text-lg">See Full Menu</a>
+        </div>
+    </section>
+
+    <!-- Reservation CTA Section -->
+    <section id="reserve" class="py-20 bg-gray-800 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+            <p class="uppercase tracking-widest text-lg" style="color: var(--secondary-color);">Make Your Evening Special</p>
+            <h2 class="text-5xl font-extrabold">Reserve Your Table Today</h2>
+            <p class="text-gray-300 text-lg">We recommend booking in advance, especially for weekend dining. Click below or call us at (123) 456-7890.</p>
+            <a href="#" class="inline-block bg-white text-gray-800 px-10 py-4 rounded-lg font-bold shadow-2xl text-xl hover:bg-gray-200 transition duration-300">Book Online</a>
+        </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <footer id="contact" class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+            
+            <!-- Logo/Brand -->
+            <div>
+                <h3 class="text-2xl font-bold mb-3" style="color: var(--primary-color);">The Culinary Hub</h3>
+                <p class="text-gray-400 text-sm">Passionate about food, service, and creating a memorable experience.</p>
+            </div>
+            
+            <!-- Quick Links -->
+            <div>
+                <h4 class="text-lg font-semibold mb-3 text-white border-b border-gray-700 pb-1">Quick Links</h4>
+                <ul class="space-y-2 text-gray-400 text-sm">
+                    <li><a href="#menu" class="hover:text-red-400 transition">Menu</a></li>
+                    <li><a href="#about" class="hover:text-red-400 transition">About Us</a></li>
+                    <li><a href="#reserve" class="hover:text-red-400 transition">Reservations</a></li>
+                </ul>
+            </div>
+
+            <!-- Address -->
+            <div>
+                <h4 class="text-lg font-semibold mb-3 text-white border-b border-gray-700 pb-1">Visit Us</h4>
+                <p class="text-gray-400 text-sm">
+                    123 Gourmet Lane, <br>
+                    Foodie City, TX 78704 <br>
+                    Open: Tue - Sun, 5 PM - 10 PM
+                </p>
+            </div>
+
+            <!-- Contact -->
+            <div>
+                <h4 class="text-lg font-semibold mb-3 text-white border-b border-gray-700 pb-1">Contact</h4>
+                <p class="text-gray-400 text-sm space-y-2">
+                    <span class="block"><i class="fas fa-phone mr-2" style="color: var(--secondary-color);"></i> (123) 456-7890</span>
+                    <span class="block"><i class="fas fa-envelope mr-2" style="color: var(--secondary-color);"></i> info@culinaryhub.com</span>
+                </p>
+            </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto mt-8 pt-6 border-t border-gray-800 text-center text-gray-500 text-sm">
+            &copy; 2025 The Culinary Hub. All rights reserved. | Designed by Chilumarthi Tejaswini
+        </div>
+    </footer>
+
+</body>
+</html>
