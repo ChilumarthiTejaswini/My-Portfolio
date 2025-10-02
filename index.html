@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chilumarthi Tejaswini - Portfolio</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        /* Custom styles for the Inter font and main color scheme */
+        :root {
+            --primary-color: #3b82f6; /* Blue-500 */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+        }
+        .section-header {
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .skill-item {
+            background-color: #e0f2fe; /* Blue-100 */
+            color: #1e40af; /* Blue-800 */
+        }
+    </style>
+</head>
+<body class="p-4 md:p-10">
+
+    <div class="max-w-7xl mx-auto shadow-2xl rounded-xl overflow-hidden bg-white">
+        
+        <!-- Main Container: Side Panel and Content Panel -->
+        <div class="lg:grid lg:grid-cols-4">
+            
+            <!-- Left Side Panel (Contact & Skills) -->
+            <aside class="lg:col-span-1 bg-gray-800 text-white p-8 space-y-8">
+                <!-- Name and Title -->
+                <header class="text-center">
+                    <h1 class="text-3xl font-bold mb-1 tracking-wider">CHILUMARTHI TEJASWINI</h1>
+                    <p class="text-blue-300 text-sm font-medium">Computer Science Student (AIML)</p>
+                </header>
+
+                <!-- Contact Info -->
+                <section class="space-y-4">
+                    <h2 class="text-xl font-semibold text-blue-400 border-b border-blue-400 pb-2">CONTACT</h2>
+                    <p class="flex items-center space-x-3 text-sm">
+                        <i class="fas fa-phone-alt text-blue-300"></i>
+                        <span>+91-9391093656</span>
+                    </p>
+                    <p class="flex items-center space-x-3 text-sm">
+                        <i class="fas fa-envelope text-blue-300"></i>
+                        <a href="mailto:tejaswinichilumarthi@gmail.com" class="hover:text-blue-300 transition duration-150">tejaswinichilumarthi@gmail.com</a>
+                    </p>
+                    <p class="flex items-center space-x-3 text-sm">
+                        <i class="fas fa-user-tag text-blue-300"></i>
+                        <span>Roll No.: 23885A6602</span>
+                    </p>
+                    <p class="flex items-center space-x-3 text-sm">
+                        <i class="fab fa-github text-blue-300"></i>
+                        <a href="https://github.com/ChilumarthiTejaswini" target="_blank" class="hover:text-blue-300 transition duration-150">GitHub Profile</a>
+                    </p>
+                    <p class="flex items-center space-x-3 text-sm">
+                        <i class="fab fa-linkedin text-blue-300"></i>
+                        <a href="#" target="_blank" class="hover:text-blue-300 transition duration-150">LinkedIn Profile</a>
+                    </p>
+                </section>
+
+                <!-- Technical Skills -->
+                <section class="space-y-4">
+                    <h2 class="text-xl font-semibold text-blue-400 border-b border-blue-400 pb-2">TECHNICAL SKILLS</h2>
+                    <div class="flex flex-wrap gap-2 text-xs">
+                        <!-- Languages -->
+                        <span class="skill-item px-3 py-1 rounded-full font-medium">Java</span>
+                        <span class="skill-item px-3 py-1 rounded-full font-medium">Python</span>
+                        <span class="skill-item px-3 py-1 rounded-full font-medium">HTML+CSS</span>
+                        
+                        <!-- Tools & Databases -->
+                        <span class="skill-item px-3 py-1 rounded-full font-medium">VScode</span>
+                        <span class="skill-item px-3 py-1 rounded-full font-medium">Github</span>
+                        <span class="skill-item px-3 py-1 rounded-full font-medium">MongoDB</span>
+                        <span class="skill-item px-3 py-1 rounded-full font-medium">MySQL</span>
+                        <span class="skill-item px-3 py-1 rounded-full font-medium">Python Libraries</span>
+                    </div>
+                </section>
+
+                <!-- Soft Skills -->
+                <section class="space-y-4">
+                    <h2 class="text-xl font-semibold text-blue-400 border-b border-blue-400 pb-2">SOFT SKILLS</h2>
+                    <ul class="list-disc list-inside space-y-1 text-sm pl-2">
+                        <li>Leadership Qualities</li>
+                        <li>Active Listening</li>
+                        <li>Time Management</li>
+                    </ul>
+                </section>
+            </aside>
+
+            <!-- Right Content Panel (Objective, Education, Experience, Projects) -->
+            <main class="lg:col-span-3 p-8 md:p-12 space-y-10">
+
+                <!-- Career Objective -->
+                <section>
+                    <h2 class="text-2xl font-bold text-gray-800 section-header">CAREER OBJECTIVE</h2>
+                    <p class="text-gray-600 leading-relaxed">A passionate and curious Computer Science student specializing in Artificial Intelligence and Machine Learning. Eager to apply data-driven problem-solving, machine learning algorithms, and programming skills to real-world challenges and contribute to innovative AI solutions.</p>
+                </section>
+
+                <!-- Education -->
+                <section>
+                    <h2 class="text-2xl font-bold text-gray-800 section-header">EDUCATION</h2>
+                    <div class="space-y-4">
+                        <!-- B.Tech -->
+                        <div class="border-l-4 border-blue-500 pl-4">
+                            <h3 class="text-xl font-semibold text-gray-700">B.Tech in CSE (AIML), JNTUH</h3>
+                            <p class="text-gray-500 italic">Vardhaman College of Engineering, Shamshabad</p>
+                            <p class="text-sm text-gray-500 mt-1">2023–2026 | **CGPA: 8.04**</p>
+                        </div>
+                        <!-- Diploma -->
+                        <div class="border-l-4 border-blue-500 pl-4">
+                            <h3 class="text-xl font-semibold text-gray-700">Diploma in Electrical and Electronics Engineering (SBTET)</h3>
+                            <p class="text-gray-500 italic">Govt. Polytechnic college, Nalgonda</p>
+                            <p class="text-sm text-gray-500 mt-1">2020–2023 | **CGPA: 9.32** (First Class with Distinction)</p>
+                        </div>
+                        <!-- Tenth Class -->
+                        <div class="border-l-4 border-blue-500 pl-4">
+                            <h3 class="text-xl font-semibold text-gray-700">Tenth Class (BSET)</h3>
+                            <p class="text-gray-500 italic">Saandeep high school, Nalgonda</p>
+                            <p class="text-sm text-gray-500 mt-1">2020 | **CGPA: 10**</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Internships -->
+                <section>
+                    <h2 class="text-2xl font-bold text-gray-800 section-header">INTERNSHIP EXPERIENCE</h2>
+                    <div class="space-y-6">
+                        <!-- Web Development -->
+                        <div class="bg-gray-50 p-4 rounded-lg shadow-inner">
+                            <h3 class="text-xl font-semibold text-blue-600">Web Development Intern</h3>
+                            <p class="text-gray-600 italic mb-2">Nexus Info | Sep - Oct 2024 | Online</p>
+                            <ul class="list-disc list-outside space-y-1 text-gray-700 pl-5 text-sm">
+                                <li>Gained foundational knowledge of web development using **HTML, CSS, and JavaScript**.</li>
+                                <li>Learned the basics of **ReactJS** for building reusable and dynamic components.</li>
+                                <li>Worked on projects such as login/signup pages, a Simple Restaurant Website, and a client demo project.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Python with Machine Learning -->
+                        <div class="bg-gray-50 p-4 rounded-lg shadow-inner">
+                            <h3 class="text-xl font-semibold text-blue-600">Python with Machine Learning Intern</h3>
+                            <p class="text-gray-600 italic mb-2">EISystems | March - May 2024 | Online</p>
+                            <ul class="list-disc list-outside space-y-1 text-gray-700 pl-5 text-sm">
+                                <li>Gained hands-on experience with **supervised and unsupervised machine learning algorithms**.</li>
+                                <li>Worked on beginner-level data preprocessing including cleaning and organizing datasets.</li>
+                                <li>Built and evaluated simple models using **Scikit-learn and TensorFlow**.</li>
+                                <li>Explored real-world applications of AI through mini-projects and practical exercises.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Academic Projects -->
+                <section>
+                    <h2 class="text-2xl font-bold text-gray-800 section-header">ACADEMIC PROJECTS</h2>
+                    <div class="bg-gray-50 p-4 rounded-lg shadow-inner border-l-4 border-red-500">
+                        <h3 class="text-xl font-semibold text-red-700">BloodSync – Empowering Blood Donations with Smart Solutions</h3>
+                        <p class="text-gray-600 italic mb-2">Aug 2024 – Nov 2024</p>
+                        <ul class="list-disc list-outside space-y-1 text-gray-700 pl-5 text-sm">
+                            <li>Developed a user-friendly web application for blood donation and donor search.</li>
+                            <li>Enabled users to register, update profiles, and search for donors based on blood type.</li>
+                            <li>Integrated contact sharing between donors and receivers to streamline communication.</li>
+                            <li>**Tech Stack:** HTML, CSS, Python, Flask, SQLAlchemy.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Certifications & Achievements -->
+                <section>
+                    <h2 class="text-2xl font-bold text-gray-800 section-header">CERTIFICATIONS & ACHIEVEMENTS</h2>
+                    <div class="space-y-4">
+                        <ul class="list-disc list-outside space-y-2 text-gray-700 pl-5">
+                            <li class="font-medium">**MongoDB Python Developer Path** (MongoDB University) - Completed in Dec 2024.</li>
+                            <li class="font-medium">Certified in workshop on **AI dashboards using Microsoft Power BI** (July 2025).</li>
+                            <li>**TS TRANSCO Training certification** (132/33 KV Substation, Nalgonda) - Academic Year 2020-2023.</li>
+                            <li>Certificate from Great Learning Academy: **Introduction to NLP** (October 2024).</li>
+                            <li>Achieved **First Class with Distinction** in Diploma in EEE (CGPA 9.32).</li>
+                            <li>Certified in Web Development Internship for Client Demo Project: <a href="http://gitgub.com/ChilumarthiTejaswini/Client-Project-Demo" target="_blank" class="text-blue-500 hover:underline">View Project</a>.</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <!-- Relevant Coursework & Extracurricular -->
+                <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-800 section-header">RELEVANT COURSEWORK</h2>
+                        <ul class="list-disc list-outside space-y-1 text-gray-700 pl-5 text-sm">
+                            <li>Operating Systems</li>
+                            <li>Object Oriented Programming</li>
+                            <li>Database Management System</li>
+                            <li>Software Engineering</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-800 section-header">EXTRACURRICULAR ACTIVITIES</h2>
+                        <ul class="list-disc list-outside space-y-1 text-gray-700 pl-5 text-sm">
+                            <li>Participated in various school, college level dance performances and cultural events.</li>
+                            <li>Sports.</li>
+                        </ul>
+                    </div>
+                </section>
+
+            </main>
+        </div>
+
+    </div>
+
+</body>
+</html>
