@@ -33,14 +33,30 @@
 
     <div class="max-w-7xl mx-auto shadow-2xl rounded-xl overflow-hidden bg-white">
         
-        <!-- NEW NAVIGATION BAR -->
-        <nav class="bg-blue-600 p-4 shadow-lg">
+        <!-- UPDATED NAVIGATION HEADER -->
+        <nav class="bg-gray-800 p-4 shadow-xl">
             <div class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-8 justify-center">
-                <a href="index.html" class="text-white font-bold hover:text-blue-200 transition duration-300 text-center py-1 px-4 rounded-lg bg-blue-700">HOME (RESUME)</a>
-                <a href="blogs.html" class="text-white font-bold hover:text-blue-200 transition duration-300 text-center py-1 px-4 rounded-lg">TECHNOLOGY BLOGS</a>
+                <!-- Branding/Name on the left for better look (optional, but good practice) -->
+                <div class="text-xl font-extrabold text-white sm:mr-8 text-center sm:text-left">
+                    Tejaswini's Portfolio
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="flex flex-wrap justify-center sm:justify-start space-x-4">
+                    <a href="index.html" class="text-white font-bold hover:bg-blue-600 transition duration-300 text-center py-2 px-4 rounded-lg bg-blue-700">
+                        <i class="fas fa-file-alt mr-2"></i> RESUME
+                    </a>
+                    <a href="blogs.html" class="text-white font-bold hover:bg-gray-700 transition duration-300 text-center py-2 px-4 rounded-lg">
+                        <i class="fas fa-rss-square mr-2"></i> BLOGS
+                    </a>
+                    <!-- New Link to the Restaurant Page -->
+                    <a href="restaurant.html" class="text-white font-bold hover:bg-gray-700 transition duration-300 text-center py-2 px-4 rounded-lg">
+                        <i class="fas fa-utensils mr-2"></i> RESTAURANT PROJECT
+                    </a>
+                </div>
             </div>
         </nav>
-        <!-- END NEW NAVIGATION BAR -->
+        <!-- END UPDATED NAVIGATION HEADER -->
 
         <!-- Main Container: Side Panel and Content Panel -->
         <div class="lg:grid lg:grid-cols-4">
