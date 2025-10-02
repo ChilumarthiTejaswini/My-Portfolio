@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chilumarthi Tejaswini - Technology Blog</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        /* Custom styles for the Inter font and main color scheme */
+        :root {
+            --primary-color: #3b82f6; /* Blue-500 */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+        }
+    </style>
+</head>
+<body class="p-4 md:p-10">
+
+    <div class="max-w-7xl mx-auto shadow-2xl rounded-xl overflow-hidden bg-white min-h-screen">
+        
+        <!-- NAVIGATION BAR -->
+        <nav class="bg-blue-600 p-4 shadow-lg">
+            <div class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-8 justify-center">
+                <a href="index.html" class="text-white font-bold hover:text-blue-200 transition duration-300 text-center py-1 px-4 rounded-lg">HOME (RESUME)</a>
+                <a href="blogs.html" class="text-white font-bold hover:text-blue-200 transition duration-300 text-center py-1 px-4 rounded-lg bg-blue-700">TECHNOLOGY BLOGS</a>
+            </div>
+        </nav>
+        <!-- END NAVIGATION BAR -->
+
+        <!-- Blog Header -->
+        <header class="p-8 md:p-12 text-center bg-white border-b-4 border-blue-500">
+            <h1 class="text-4xl font-extrabold text-gray-800 mb-2">My Tech Insights</h1>
+            <p class="text-xl text-gray-600">Exploring Python, Web Development, Databases, and AI/ML.</p>
+        </header>
+
+        <!-- Blog Posts Grid -->
+        <main class="p-8 md:p-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 border-b pb-2">Latest Articles</h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Blog Post 1: Python -->
+                <article class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden border-t-4 border-green-500">
+                    <div class="p-6 space-y-3">
+                        <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full">Python</span>
+                        <h3 class="text-xl font-bold text-gray-800">The Power of Data Wrangling with Pandas</h3>
+                        <p class="text-gray-600 text-sm line-clamp-3">A beginner's guide to cleaning, transforming, and analyzing data using the essential Python library, Pandas. Learn how to handle missing values and merge datasets efficiently.</p>
+                        <a href="#" class="inline-flex items-center text-blue-500 font-semibold hover:text-blue-700 transition duration-150 text-sm">
+                            Read More
+                            <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2: HTML/CSS -->
+                <article class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden border-t-4 border-red-500">
+                    <div class="p-6 space-y-3">
+                        <span class="inline-block bg-red-100 text-red-800 text-xs font-semibold px-3 py-1 rounded-full">HTML & CSS</span>
+                        <h3 class="text-xl font-bold text-gray-800">Mastering Responsive Layouts with Flexbox</h3>
+                        <p class="text-gray-600 text-sm line-clamp-3">Understanding the fundamentals of Flexbox is crucial for modern web development. This post breaks down properties like justify-content and align-items for fluid design.</p>
+                        <a href="#" class="inline-flex items-center text-blue-500 font-semibold hover:text-blue-700 transition duration-150 text-sm">
+                            Read More
+                            <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3: Databases -->
+                <article class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden border-t-4 border-yellow-500">
+                    <div class="p-6 space-y-3">
+                        <span class="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold px-3 py-1 rounded-full">MySQL</span>
+                        <h3 class="text-xl font-bold text-gray-800">Query Optimization: Making Your SQL Run Faster</h3>
+                        <p class="text-gray-600 text-sm line-clamp-3">Tips and tricks to write efficient SQL queries. We cover indexing, avoiding SELECT * , and understanding the EXPLAIN command for database performance tuning.</p>
+                        <a href="#" class="inline-flex items-center text-blue-500 font-semibold hover:text-blue-700 transition duration-150 text-sm">
+                            Read More
+                            <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </article>
+                
+                <!-- Blog Post 4: Java/OOP -->
+                <article class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden border-t-4 border-indigo-500">
+                    <div class="p-6 space-y-3">
+                        <span class="inline-block bg-indigo-100 text-indigo-800 text-xs font-semibold px-3 py-1 rounded-full">Java</span>
+                        <h3 class="text-xl font-bold text-gray-800">Introduction to Object-Oriented Programming in Java</h3>
+                        <p class="text-gray-600 text-sm line-clamp-3">A detailed look at the core principles of OOP: encapsulation, inheritance, polymorphism, and abstraction, illustrated with practical Java examples.</p>
+                        <a href="#" class="inline-flex items-center text-blue-500 font-semibold hover:text-blue-700 transition duration-150 text-sm">
+                            Read More
+                            <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 5: AIML -->
+                <article class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden border-t-4 border-pink-500">
+                    <div class="p-6 space-y-3">
+                        <span class="inline-block bg-pink-100 text-pink-800 text-xs font-semibold px-3 py-1 rounded-full">AI/ML</span>
+                        <h3 class="text-xl font-bold text-gray-800">Unpacking the Basics of Supervised Learning</h3>
+                        <p class="text-gray-600 text-sm line-clamp-3">A breakdown of classification and regression models, explaining how labeled data helps algorithms predict future outcomes in real-world AI applications.</p>
+                        <a href="#" class="inline-flex items-center text-blue-500 font-semibold hover:text-blue-700 transition duration-150 text-sm">
+                            Read More
+                            <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </main>
+
+    </div>
+
+</body>
+</html>
